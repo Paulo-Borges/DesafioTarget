@@ -1,6 +1,7 @@
 ﻿using DesafioTarget.Api.Models;
 using DesafioTarget.Api.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace DesafioTarget.Api.Controllers
 {
@@ -16,23 +17,21 @@ namespace DesafioTarget.Api.Controllers
         }
 
         [HttpGet]
-        //public IActionResult GetComissao([FromQuery] decimal valorVenda)
-        //{
-        //    var comissao = _comissaoService.CalcularComissao(valorVenda);
-        //    return Ok(new { ValorVenda = valorVenda, Comissao = comissao });
-        //}
         public IActionResult Get()
         {
-            var vendas = new List<Venda>()
-            {
-                new Venda { Vendedor = "João", Valor = 50 },
-                new Venda { Vendedor = "Maria", Valor = 200 },
-                new Venda { Vendedor = "João", Valor = 600 },
-                new Venda { Vendedor = "Maria", Valor = 300 },
-                new Venda { Vendedor = "Carlos", Valor = 700 }
-            };
-            var comissoesPorVendedor = _comissaoService.CalcularPorVendedor(vendas);
-            return Ok(comissoesPorVendedor);
+            string json = System.IO.File.ReadAllText("Data/vendas.json");
+            //return Ok(json);
+
+            var dados = JsonSerializer.Deserialize<VendasJson>(json,
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            //return Ok(dados);
+
+            var resultado = _comissaoService.CalcularPorVendedor(dados!.Vendas);
+
+            return Ok(resultado);
         }
     }
 }

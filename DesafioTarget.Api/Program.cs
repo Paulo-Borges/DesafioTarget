@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ComissaoService>();
 builder.Services.AddScoped<EstoqueService>();
+builder.Services.AddScoped<JurosService>();
 
 var app = builder.Build();
 

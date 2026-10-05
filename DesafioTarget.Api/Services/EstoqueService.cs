@@ -50,10 +50,52 @@ namespace DesafioTarget.Api.Services
 
             File.WriteAllText(_arquivo, novoJson);
 
-            return new
+            var movimentacao = new MovimentacaoEstoque
             {
-                produto.CodigoProduto,
-                produto.DescricaoProduto,
+                CodigoProduto = request.CodigoProduto,
+                Tipo = request.Tipo,
+                Quantidade = request.Quantidade,
+                Descricao = request.Descricao
+            };
+
+            string arquivoMovimentacoes = "Data/movimentacoes.json";
+
+            var movimentacoes = new List<MovimentacaoEstoque>();
+
+            if (File.Exists(arquivoMovimentacoes))
+            {
+                string jsonMovimentacoes =
+                File.ReadAllText(arquivoMovimentacoes);
+
+                movimentacoes =
+                JsonSerializer.Deserialize<List<MovimentacaoEstoque>>(
+                jsonMovimentacoes)
+                ?? new List<MovimentacaoEstoque>();
+            }
+
+            movimentacoes.Add(movimentacao);
+
+            string novoJsonMovimentacoes =
+            JsonSerializer.Serialize(
+            movimentacoes,
+            new JsonSerializerOptions
+            {
+                WriteIndented = true
+            });
+
+            File.WriteAllText(
+            arquivoMovimentacoes,
+            novoJsonMovimentacoes);
+
+
+            return new MovimentacaoResponseDTO
+            {
+                Id = movimentacao.Id,
+                DataMovimentacao = movimentacao.DataMovimentacao,
+                Tipo = movimentacao.Tipo,
+                Descricao = movimentacao.Descricao,
+                CodigoProduto = produto.CodigoProduto,
+                DescricaoProduto = produto.DescricaoProduto,
                 EstoqueFinal = produto.Estoque
             };
         }

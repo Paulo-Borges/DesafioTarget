@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "4a24743e-a724-4ded-b870-272b986cb236",
+    "CodigoProduto": 101,
+    "Tipo": "ENTRADA",
+    "Quantidade": 30,
+    "Descricao": "Compra On line",
+    "DataMovimentacao": "2026-10-05T17:11:51.4276005-03:00"
+  },
+  {
+    "Id": "3891c4be-d5a0-4aff-a65c-877aae290e01",
+    "CodigoProduto": 101,
+    "Tipo": "ENTRADA",
+    "Quantidade": 40,
+    "Descricao": "Compra On line",
+    "DataMovimentacao": "2026-10-05T17:12:04.864128-03:00"
+  },
+  {
+    "Id": "38319e9a-ad46-4f82-a890-85ee8f75e8aa",
+    "CodigoProduto": 101,
+    "Tipo": "SAIDA",
+    "Quantidade": 5,
+    "Descricao": "Compra On line",
+    "DataMovimentacao": "2026-10-05T17:12:25.7945206-03:00"
+  }
+]

@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ComissaoService>();
+builder.Services.AddScoped<EstoqueService>();
 
 var app = builder.Build();
 

@@ -30,5 +30,93 @@
     "Quantidade": 0,
     "Descricao": "string",
     "DataMovimentacao": "2026-10-05T18:54:35.4154638-03:00"
+  },
+  {
+    "Id": "1b9aff66-ab28-43cc-b96e-ef40b754b5ac",
+    "CodigoProduto": 101,
+    "Tipo": "Entrada",
+    "Quantidade": 50,
+    "Descricao": "Desenvolvedor",
+    "DataMovimentacao": "2026-10-06T15:13:14.3656348-03:00"
+  },
+  {
+    "Id": "1ed048a8-4efb-464c-b0d5-1a25b4b8e7a7",
+    "CodigoProduto": 104,
+    "Tipo": "Saida",
+    "Quantidade": 2,
+    "Descricao": "Escolar",
+    "DataMovimentacao": "2026-10-06T15:42:39.509458-03:00"
+  },
+  {
+    "Id": "e328094f-0772-4a76-abd3-4137db14549b",
+    "CodigoProduto": 101,
+    "Tipo": "Entrada",
+    "Quantidade": 2,
+    "Descricao": "Escolar",
+    "DataMovimentacao": "2026-10-06T15:53:28.8415142-03:00"
+  },
+  {
+    "Id": "ff41368e-2d2a-4c8e-950f-1b7e75714a47",
+    "CodigoProduto": 101,
+    "Tipo": "Entrada",
+    "Quantidade": 2,
+    "Descricao": "Escolar",
+    "DataMovimentacao": "2026-10-06T15:57:32.866854-03:00"
+  },
+  {
+    "Id": "1a58084e-d440-4b87-8743-45eb7e8b5869",
+    "CodigoProduto": 103,
+    "Tipo": "Entrada",
+    "Quantidade": 2,
+    "Descricao": "Escolar",
+    "DataMovimentacao": "2026-10-06T15:57:37.4462039-03:00"
+  },
+  {
+    "Id": "4d506017-0794-476b-b6aa-4f8c97bd0a94",
+    "CodigoProduto": 102,
+    "Tipo": "Saida",
+    "Quantidade": 3,
+    "Descricao": "CASA Home",
+    "DataMovimentacao": "2026-10-06T15:58:28.4094354-03:00"
+  },
+  {
+    "Id": "748ffb37-cf78-4698-b637-94a3be84fd01",
+    "CodigoProduto": 102,
+    "Tipo": "Saida",
+    "Quantidade": 3,
+    "Descricao": "CASA Home",
+    "DataMovimentacao": "2026-10-06T15:58:37.7934399-03:00"
+  },
+  {
+    "Id": "6f2fa69e-65f5-4722-abd8-eec2247ca2dc",
+    "CodigoProduto": 102,
+    "Tipo": "Saida",
+    "Quantidade": 1,
+    "Descricao": "www",
+    "DataMovimentacao": "2026-10-06T18:31:51.3342951-03:00"
+  },
+  {
+    "Id": "edb9b393-74e0-43cf-bb3c-b1b9f312a60d",
+    "CodigoProduto": 102,
+    "Tipo": "Saida",
+    "Quantidade": 1,
+    "Descricao": "www",
+    "DataMovimentacao": "2026-10-06T18:31:52.4448508-03:00"
+  },
+  {
+    "Id": "40c505e8-2bbe-4887-909e-2f1b324fda5b",
+    "CodigoProduto": 105,
+    "Tipo": "Saida",
+    "Quantidade": 3,
+    "Descricao": "kskllla",
+    "DataMovimentacao": "2026-10-06T18:35:05.1685397-03:00"
+  },
+  {
+    "Id": "26481113-cc2d-47e2-9c26-ba2ca14e9dda",
+    "CodigoProduto": 105,
+    "Tipo": "Saida",
+    "Quantidade": 3,
+    "Descricao": "kskllla",
+    "DataMovimentacao": "2026-10-06T18:35:06.3754133-03:00"
   }
 ]
